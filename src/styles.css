@@ -6,6 +6,7 @@ body {
 
 .main {
   display: flex;
+  flex-direction: column;
   height: 100vh;
 }
 
@@ -20,32 +21,59 @@ body {
 .menu {
 	background-color: rgb(229, 214, 255);
 	display: flex;
-	flex-direction: column;
+	align-items: center;
+}
+
+.menu > div {
+	display: flex;
+	height: 50px;
 	align-items: center;
 	justify-content: center;
 }
 
-.menu div {
-	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.menu > div > * {
+	height: 100%;
 	background-color: rgb(242, 255, 196);
 }
 
+.menu > div > *{
+	padding: 0px 20px 0px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	white-space: nowrap;
+}
+
+
+
+.menu > div:first-child {
+	margin-left: 20px;
+}
+
+.menu > div:last-child {
+	display: flex;
+	width: 100%;
+	margin-right: 20px;
+	justify-content: end;
+}
+
 .logout {
-	margin-top: auto;
+	
 }
 
 .main_window {
 	background-color: rgb(200, 210, 255);
 	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
 
 .main_window > div:first-child {
 	display: grid;
+	align-items: center;
+	justify-content: center;
 	grid-template-columns: 1fr 60px 1fr;
 	width: 100%;
 	height: 500px;
@@ -55,6 +83,8 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
+	align-items: center;
+	justify-content: center;
 	height: 100px;
 }
 
@@ -66,4 +96,14 @@ body {
 
 .start {
 	background-color: rgb(255, 184, 244);
+	height: 30px;
+}
+
+.player > div, .AI > div {
+	display: grid;
+	height: 400px;
+	width: 400px;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	background-color: beige;
 }
