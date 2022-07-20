@@ -8,6 +8,17 @@ body {
   height: 100vh;
 }
 
+.main, center {
+	justify-content: center;
+	align-items: center;
+}
+
+.registration {
+	background-color: yellowgreen;
+	width: 300px;
+	height: 200px;
+}
+
 .menu {
 	background-color: rgb(255, 214, 214);
 	display: flex;
