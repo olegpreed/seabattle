@@ -3,7 +3,7 @@ let subMarines = document.querySelectorAll(".me .sub");
 let mediumBoat = document.querySelectorAll(".me .medium");
 let smallBoat = document.querySelectorAll(".me .small");
 
-const tableSlots = document.querySelectorAll("td");
+const tableSlotsMe = document.querySelectorAll(".gridfield.me > div");
 let chooseWeapon = [0, 0, 0, 0];
 
 let ShipState = {
@@ -86,16 +86,16 @@ for (let i = 0; i < smallBoat.length; i++) {
   });
 }
 
-for (let j = 0; j < tableSlots.length; j++) {
-  tableSlots[j].addEventListener("click", (e) => {
+for (let j = 0; j < tableSlotsMe.length; j++) {
+  tableSlotsMe[j].addEventListener("click", (e) => {
     if (
       chooseWeapon[3] === 1 &&
-      tableSlots[j].style.backgroundColor != "black"
+      tableSlotsMe[j].style.backgroundColor != "black"
     ) {
-      tableSlots[j].style.backgroundColor = "black";
+      tableSlotsMe[j].style.backgroundColor = "black";
       chooseWeapon = [0, 0, 0, 0];
     } else if (tableSlots[j].style.backgroundColor === "black") {
-      tableSlots[j].style.backgroundColor = "rgb(208 208 208)";
+      tableSlotsMe[j].style.backgroundColor = "rgb(208 208 208)";
       chooseWeapon = [0, 0, 0, 1];
     }
   });

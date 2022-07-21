@@ -83,6 +83,18 @@ body {
   color: white;
 }
 
+.gridfield {
+  display: grid;
+  grid-template-columns: repeat(10, 35px);
+  grid-template-rows: repeat(10, 35px);
+}
+
+.gridfield > div {
+  background-color: rgb(208 208 208);
+  margin: 1px;
+
+}
+
 td{
   width: 35px;
   height: 35px;
@@ -171,18 +183,18 @@ a {
 	text-decoration: none;
 }
 
-.AI  table {
+.AI  .gridfield:hover  {
   cursor: crosshair;
 }
 
-.player table:hover {
+.player .gridfield:hover {
   cursor: pointer;
 }
 
-.player td:hover {
+.player .gridfield div:hover {
   background-color: rgb(215, 236, 255);
 }
 
-.AI td:hover {
+.AI .gridfield div:hover {
   background-color: rgb(255, 216, 228);
 }
