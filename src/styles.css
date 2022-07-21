@@ -1,133 +1,159 @@
 body {
-	margin: 0;
-	font-family: 'Lato', sans-serif;
-	font-size: 18px;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
 }
 
 .main.game {
   display: grid;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 36px 1fr;
   height: 100vh;
 }
 
-.center {
-	background-image: url("https://cdn.akamai.steamstatic.com/steam/apps/1172620/ss_584788d0004933fb10420fe9284515e6f7be577f.1920x1080.jpg?t=1656604686");
-	background-size: cover;
-	background-position: bottom;
-	justify-content: center;
-	align-items: center;
-}
-
 .menu {
-	background-color: rgb(229, 214, 255);
-	display: flex;
-	align-items: center;
+  background-color: rgb(39 39 39);
+  display: flex;
+  align-items: center;
 }
 
 .menu > div {
-	display: flex;
-	height: 50px;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu > div > * {
-	height: 100%;
-	background-color: rgb(242, 255, 196);
+  height: 100%;
+  background-color: rgb(39 39 39);
+  color: white;
 }
 
-.menu > div > *{
-	padding: 0px 20px 0px 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 15px;
-	white-space: nowrap;
+.menu > div > * {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  white-space: nowrap;
 }
-
-
 
 .menu > div:first-child {
-	margin-left: 20px;
+  margin-left: 20px;
 }
 
 .menu > div:last-child {
-	display: flex;
-	width: 100%;
-	margin-right: 20px;
-	justify-content: end;
+  display: flex;
+  width: 100%;
+  margin-right: 20px;
+  justify-content: end;
 }
 
 .main_window {
-	background-color: rgb(200, 210, 255);
-	width: 100%;
-	display: grid;
-	flex-direction: column;
-	grid-template-rows: 500px 1fr;
+  background-color: #434343;
+  width: 100%;
+  display: grid;
+  flex-direction: column;
+  grid-template-rows: 500px 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-.main_window > div:first-child {
-	display: grid;
-	align-items: center;
-	justify-content: center;
-	grid-template-columns: 1fr 60px 1fr;
-	width: 100%;
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgb(255, 255, 255);
 }
 
-.main_window > div:last-child {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	width: 100%;
-	align-items: center;
-	justify-content: center;
+.AI {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.main_window > div > div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.main_window > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .start {
-	background-color: rgb(255, 184, 244);
-	height: 30px;
+  background-color: rgb(0, 0, 0);
+  height: 30px;
+  color: white;
 }
 
-
-.player > div, .AI > div {
-	display: grid;
-	height: 400px;
-	width: 400px;
-	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(10, 1fr);
-	background-color: beige;
-}
-
-.shiptable > div:nth-child(1) img {
-	width: 300px;
-}
-
-.shiptable > div:nth-child(2) img {
-	width: 150px;
-}
-
-.shiptable > div:nth-child(3) img {
-	width: 100px;
-}
-
-.shiptable > div:nth-child(4) img {
-	width: 70px;
+td{
+  width: 35px;
+  height: 35px;
+  background-color: rgb(208 208 208);
 }
 
 .shiptable {
+	background-color: rgb(208 208 208);
+}
+
+.shiptable > div:first-child {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 }
 
-.shiptable > div {
-	display: flex;
-	width: 400px;
-	height: 60px;
-	align-items:center;
-	justify-content: flex-start;
+.shiptable:last-child > div > div {
+	justify-content: flex-end;
+}
+
+.shiptable > div > div:nth-child(1) img {
+  width: 300px;
+}
+
+.shiptable > div > div:nth-child(2) img {
+  width: 150px;
+}
+
+.shiptable > div > div:nth-child(3) img {
+  width: 100px;
+}
+
+.shiptable > div > div:nth-child(4) img {
+  width: 70px;
+}
+
+.main_window > div:nth-child(3) div img:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+}
+
+.main_window > div:nth-child(3) > div > div:nth-child(2) img:hover {
+  filter: brightness(250%);
+}
+
+.main_window > div:last-child img {
+	transform: scaleX(-1);
+}
+
+.main_window > div:nth-child(3) {
+	border-right: 1px solid black;
+}
+
+.shiptable > div > div {
+  display: flex;
+  width: 400px;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main_window > div:nth-child(3) > div > div > div {
+  margin-right: 20px;
+}
+
+.main_window > div:nth-child(4) > div > div > div {
+	margin-left: 20px;
+  }
+  
+.menu > div > *:hover {
+	background-color: rgb(30, 30, 30);
+	color: bisque;
 }

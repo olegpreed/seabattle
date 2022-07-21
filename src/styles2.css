@@ -4,6 +4,15 @@
 	align-items: center;
 	height: 100vh;
 }
+
+.center {
+	background-image: url("https://cdn.akamai.steamstatic.com/steam/apps/1172620/ss_584788d0004933fb10420fe9284515e6f7be577f.1920x1080.jpg?t=1656604686");
+	background-size: cover;
+	background-position: bottom;
+	justify-content: center;
+	align-items: center;
+  }
+
 .registration {
 	display: flex;
 	flex-direction: column;
