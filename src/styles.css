@@ -171,11 +171,11 @@ a {
 	text-decoration: none;
 }
 
-.AI:hover {
+.AI  table {
   cursor: crosshair;
 }
 
-.player:hover {
+.player table:hover {
   cursor: pointer;
 }
 

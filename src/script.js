@@ -47,7 +47,7 @@ for (let i = 0; i < subMarines.length; i++) {
       subMarines[i].style.filter = "opacity(10%)";
       chooseWeapon = [0, 1, 0, 0];
       subMarines[i].chosenOne = 1
-    } else if (chooseWeapon[1] === 1) {
+    } else if (chooseWeapon[1] === 1 && subMarines[i].chosenOne === 1) {
       subMarines[i].style.filter = "opacity(100%)";
       chooseWeapon = [0, 0, 0, 0];
       subMarines[i].chosenOne = 0
@@ -61,7 +61,7 @@ for (let i = 0; i < mediumBoat.length; i++) {
       mediumBoat[i].style.filter = "opacity(10%)";
       chooseWeapon = [0, 0, 1, 0];
       mediumBoat[i].chosenOne = 1
-    } else if (chooseWeapon[2] === 1) {
+    } else if (chooseWeapon[2] === 1 && mediumBoat[i].chosenOne === 1) {
       mediumBoat[i].style.filter = "opacity(100%)";
       chooseWeapon = [0, 0, 0, 0];
       mediumBoat[i].chosenOne = 0
@@ -78,7 +78,7 @@ for (let i = 0; i < smallBoat.length; i++) {
       smallBoat[i].style.filter = "opacity(10%)";
       chooseWeapon = [0, 0, 0, 1];
       smallBoat[i].chosenOne = 1
-    } else if (chooseWeapon[3] === 1) {
+    } else if (chooseWeapon[3] === 1 && smallBoat[i].chosenOne === 1) {
       smallBoat[i].style.filter = "opacity(100%)";
       chooseWeapon = [0, 0, 0, 0];
       smallBoat[i].chosenOne = 0
