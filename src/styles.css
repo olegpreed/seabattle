@@ -170,3 +170,19 @@ td{
 a {
 	text-decoration: none;
 }
+
+.AI:hover {
+  cursor: crosshair;
+}
+
+.player:hover {
+  cursor: pointer;
+}
+
+.player td:hover {
+  background-color: rgb(215, 236, 255);
+}
+
+.AI td:hover {
+  background-color: rgb(255, 216, 228);
+}
