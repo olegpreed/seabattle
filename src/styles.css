@@ -90,7 +90,7 @@ td{
 }
 
 .shiptable {
-	background-color: rgb(208 208 208);
+	background-color: rgb(39 39 39);
 }
 
 .shiptable > div:first-child {
@@ -102,6 +102,10 @@ td{
 
 .shiptable:last-child > div > div {
 	justify-content: flex-end;
+}
+
+.shiptable > div > div:nth-child(1) {
+	margin: 15px 0 15px 0;
 }
 
 .shiptable > div > div:nth-child(1) img {
@@ -126,7 +130,7 @@ td{
 }
 
 .main_window > div:nth-child(3) > div > div:nth-child(2) img:hover {
-  filter: brightness(250%);
+  filter: white;
 }
 
 .main_window > div:last-child img {
@@ -134,7 +138,7 @@ td{
 }
 
 .main_window > div:nth-child(3) {
-	border-right: 1px solid black;
+	border-right: 1px solid rgb(255, 255, 255);
 }
 
 .shiptable > div > div {
