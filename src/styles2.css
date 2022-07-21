@@ -27,7 +27,8 @@
 	height: 150px;
 	display: flex;
 	font-family: 'Permanent Marker', cursive;
-	font-size: 70px;
+	align-items: center;
+	font-size: 50px;
 	color: black;
 	overflow: hidden;
 	white-space: nowrap;
