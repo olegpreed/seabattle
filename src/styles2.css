@@ -6,7 +6,7 @@
 }
 
 .center {
-	background-image: url("https://cdn.akamai.steamstatic.com/steam/apps/1172620/ss_584788d0004933fb10420fe9284515e6f7be577f.1920x1080.jpg?t=1656604686");
+	background-image: url("https://s1.1zoom.me/b5050/656/413802-alexfas01_1366x768.jpg");
 	background-size: cover;
 	background-position: bottom;
 	justify-content: center;
@@ -16,7 +16,7 @@
 .registration {
 	display: flex;
 	flex-direction: column;
-	background: linear-gradient(249deg, #ffc681, #ffa047);
+	background: linear-gradient(249deg, #a9a9a9, #f4f4f4);
 	align-items: center;
 	width: 300px;
 	height: 400px;
@@ -26,11 +26,9 @@
 .registration > div:first-child {
 	height: 150px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	font-family: 'Permanent Marker', cursive;
-	font-size: 80px;
-	color: #32bbe4;
+	font-size: 70px;
+	color: black;
 	overflow: hidden;
 	white-space: nowrap;
 
@@ -85,7 +83,7 @@ input[type="text"], input[type="password"], input[type="password2"] {
 }
 
 input[type="submit"] {
-	background-color: #32bbe4;
+	background-color: black;
 	color: white;
 }
 
