@@ -62,7 +62,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid rgb(255, 255, 255);
+  border-right: 1px dashed white;
 }
 
 .AI {
@@ -141,6 +141,10 @@ td{
 	border-right: 1px solid rgb(255, 255, 255);
 }
 
+.shiptable {
+	border-top: 1px solid rgb(255, 255, 255);
+}
+
 .shiptable > div > div {
   display: flex;
   width: 400px;
@@ -160,4 +164,9 @@ td{
 .menu > div > *:hover {
 	background-color: rgb(30, 30, 30);
 	color: bisque;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
 }

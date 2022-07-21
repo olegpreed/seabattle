@@ -5,34 +5,46 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Rubik&display=swap" rel="stylesheet">
 	<title>SEA BATTLE</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<div class="main">
+	<div class="main game">
 		<div class="menu">
-			<a href="./index.html">
-				<div class="game">
-					<div class="icon">Game</div>
+			<div>
+				<a href="./index.html">
+					<div class="game">
+						<div class="icon">Game</div>
+					</div>
+				</a>
+				<a href="./myStats.html">
+					<div class="stats">
+						<div class="icon">Stats</div>
+					</div>
+				</a>
+				<div class="best">
+					<div class="icon">Best players</div>
 				</div>
-			</a>
-			<a href="./myStats.html">
-				<div class="stats">
-					<div class="icon">Stats</div>
-				</div>
-			</a>
-			<div class="best">
-				<div class="icon">Best players</div>
 			</div>
-
 			<div class="logout">
 				<div class="icon">Logout</div>
 			</div>
 		</div>
-		<div class="main_window">
+		<div class="main_window" style="display: flex;">
+			<div style="display: flex; justify-content:center; align-items: center; height: 600px; position: relative; overflow: hidden; ">
+				<div style="height: 600px; display: flex; justify-content: center; align-items: center;"> 
+					<div style="font-family:  Oswald; font-size: 650px; font-weight: 500; color:white;">404</div>
+				<img src="https://images.squarespace-cdn.com/content/v1/568f1a51b204d5eb02a888cc/1621717284832-RCKAYPUZZ30MT1EZT94M/ship+repair+for+dummies1+alt.jpg"
+					style="height: 370px; width: auto;  transform: scaleX(1); border-radius: 20px;  position: absolute; top: 150px;" alt="">
+				</div>
+					
+			</div>
 		</div>
-	</div>
 </body>
 
 </html>
